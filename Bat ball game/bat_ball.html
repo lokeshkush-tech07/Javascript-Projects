@@ -2,11 +2,27 @@
 <html lang="en">
 <head>
     <title>Bat ball game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Bat Ball Stampout Game</h2>
-    <button>Bat</button>
-    <button>Ball</button>
-    <button>Stamp</button>
+    <h1>Bat Ball Stampout Game</h1>
+    <button class="button" onclick="
+    console.log('You have choseen bat');
+    //THis will generate random number from 0 to 3
+    let randomnuber = math.random() * 3;
+    if (randomnuber > 0 && randomnuber <= 1){
+        let computer_Coice = 'bat';
+        console.log('Computer choice is bat');
+    } else if(randomnuber >1 && randomnuber <= 2){
+        let computer_Coice = 'ball';
+        console.log('Computer choice is ball'); 
+    } else {
+        let computer_Coice = 'stump';
+        console.log('Computer choice is stump'); 
+    }
+    ">Bat</button>
+
+    <button class="button">Ball</button>
+    <button class="button">Stamp</button>
 </body>
 </html>
